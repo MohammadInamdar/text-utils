@@ -1,11 +1,11 @@
 import React from "react";
-
+import "../Component/All.css";
 const NavBar = (props) => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand heading" href="/">
             {props.title}
           </a>
           <button
@@ -20,8 +20,8 @@ const NavBar = (props) => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
+            <ul className="navbar-nav ">
+              <li className="nav-item tap-1">
                 <a className="nav-link active" aria-current="page" href="/">
                   Home
                 </a>

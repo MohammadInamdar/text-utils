@@ -17,7 +17,7 @@ const TextForm = (props) => {
   return (
     <>
       {/* props add into app.js  */}
-      <h1>{props.heading}</h1>
+      <h1 className="headingTag">{props.heading}</h1>
       <div className="mb-3">
         <textarea
           className="form-control"
