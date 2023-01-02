@@ -11,6 +11,11 @@ const TextForm = (props) => {
     let newText = text.toLowerCase();
     setText(newText);
   };
+  const handleClearClick = () => {
+    // using toUpperCase string method chage text
+    let newText = " ";
+    setText(newText);
+  };
 
   //   Handle for event for use event.target.value
   const handleOnChange = (event) => {
@@ -18,7 +23,7 @@ const TextForm = (props) => {
   };
 
   //   use for usestate for settext
-  const [text, setText] = useState("Enter Your Text here");
+  const [text, setText] = useState("");
   return (
     <>
       {/* props add into app.js  */}
@@ -37,10 +42,16 @@ const TextForm = (props) => {
           <span>UpperCase</span>
         </button>
         <button
-          className="btn btn-primary my-3 mx-3 btn-6"
+          className="btn btn-primary ml-3 mx-3 btn-6"
           onClick={handleLoClick}
         >
           <span>LowerCase</span>
+        </button>
+        <button
+          className="btn btn-primary ml-3  btn-6"
+          onClick={handleClearClick}
+        >
+          <span>Clear</span>
         </button>
       </div>
       <div className="container">
